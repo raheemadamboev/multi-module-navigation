@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "MultiModuleNavigation"
 include(":app")
+include(":feature_a")
+include(":feature_b")
+include(":navigation")

@@ -1,23 +1,18 @@
 plugins {
-    alias(libs.plugins.android)
+    alias(libs.plugins.library)
     alias(libs.plugins.kotlin)
     alias(libs.plugins.compose)
 }
 
 android {
-    namespace = "xyz.teamgravity.multimodulenavigation"
+    namespace = "xyz.teamgravity.feature_b"
     compileSdk = libs.versions.sdk.compile.get().toInt()
 
     defaultConfig {
-        applicationId = "xyz.teamgravity.multimodulenavigation"
         minSdk = libs.versions.sdk.min.get().toInt()
-        targetSdk = libs.versions.sdk.target.get().toInt()
-        versionCode = 1
-        versionName = "1.0.0"
 
-        vectorDrawables {
-            useSupportLibrary = true
-        }
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     compileOptions {
@@ -54,9 +49,6 @@ dependencies {
 
     // compose lifecycle
     implementation(libs.compose.lifecycle)
-
-    // compose navigation
-    implementation(libs.compose.navigation)
 
     // core
     implementation(libs.core)
