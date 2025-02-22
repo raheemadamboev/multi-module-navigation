@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ScreenA -->
+    <string name="feature_a_screen_a">Feature A - Screen A</string>
+    <string name="navigate">Navigate</string>
+
+    <!-- ScreenB -->
+    <string name="feature_a_screen_b">Feature A - Screen B</string>
+</resources>

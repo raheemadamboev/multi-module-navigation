@@ -42,6 +42,15 @@ android {
 
 dependencies {
 
+    // navigation
+    implementation(projects.navigation)
+
+    // feature a
+    implementation(projects.featureA)
+
+    // feature b
+    implementation(projects.featureB)
+
     // compose
     implementation(platform(libs.compose))
     implementation(libs.compose.ui)
